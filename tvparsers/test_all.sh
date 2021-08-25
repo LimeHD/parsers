@@ -1,6 +1,12 @@
 #!/bin/bash
 
+echo "Create directory for temporary output files"
+
 mkdir -p $(pwd)/tmp/all
+
+echo "Create image (tv_parsers:latest) if not exist"
+
+docker build -t tv_parsers:latest .
 
 for filename in $(pwd)/*.py; do
   file=$(basename $filename)
