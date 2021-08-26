@@ -1,1 +1,1 @@
-docker run -v $1:/out --rm -it tv_parsers:latest 30a_music_channel.py --output /out/30a_music_channel.csv
+docker run -v ~/epg_parsers/shared/output:/out --rm -it tv_parsers:latest 30a_music_channel.py --output /out/30a_music_channel.csv
