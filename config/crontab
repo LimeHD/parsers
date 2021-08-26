@@ -9,4 +9,4 @@ MAILTO="servers@limehd.tv"
 07 5,14 * * * rm -f /home/master/epg_parsers/shared/output/TV_Pack2.xml; cd ~/epg_parsers/current; env $(cat ~/epg_parsers/shared/.env | xargs) ./bin/download_tv_pack_2 ~/epg_parsers/shared/output/ && env $(cat ~/epg_parsers/shared/.env | xargs) ./bin/tv_pack_parser_2 ~/epg_parsers/shared/output/TV_Pack2.xml
 17 4 * * * cd ~/epg_parsers/current; env $(cat ~/epg_parsers/shared/.env | xargs) ./bin/dvbs_parser ~/epg_parsers/shared/output/dvb_s.csv
 10 11 * * * cd ~/limehd.tv/current; php ./yii cron/yakassa-autopay >> ~/limehd.tv/shared/log/yakassa_autopay.log 2>&1
-47 * * * *   cd ~/epg_parsers/current; ./bin/30a_music_channel ~/epg_parsers/shared/output
+47 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_30a_music_channel ~/epg_parsers/shared/output

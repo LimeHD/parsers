@@ -11,6 +11,7 @@ bin/*
 !bin/standard_parser
 !bin/download_tv_pack_2
 !bin/tv_pack_parser_2
+!bin/tvparser_30a_music_channel
 *.csv
 tmp/*
 !tmp/.gitkeep
