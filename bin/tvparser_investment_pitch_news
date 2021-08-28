@@ -1,0 +1,1 @@
+docker run -v ~/epg_parsers/shared/output:/out --rm -i tv_parsers:latest investment_pitch_news.py --output /out/investment_pitch_news.csv

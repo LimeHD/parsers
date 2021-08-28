@@ -1,0 +1,7 @@
+beautifulsoup4
+requests
+pytz
+smbprotocol
+lxml
+openpyxl
+xlrd

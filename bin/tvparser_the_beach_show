@@ -1,0 +1,1 @@
+docker run -v ~/epg_parsers/shared/output:/out --rm -i tv_parsers:latest the_beach_show.py --output /out/the_beach_show.csv

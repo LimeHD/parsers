@@ -1,0 +1,1 @@
+docker run -v ~/epg_parsers/shared/output:/out --rm -i tv_parsers:latest tvsurcanal14.py --output /out/tvsurcanal14.csv

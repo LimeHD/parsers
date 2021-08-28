@@ -9,3 +9,33 @@ MAILTO="servers@limehd.tv"
 07 5,14 * * * rm -f /home/master/epg_parsers/shared/output/TV_Pack2.xml; cd ~/epg_parsers/current; env $(cat ~/epg_parsers/shared/.env | xargs) ./bin/download_tv_pack_2 ~/epg_parsers/shared/output/ && env $(cat ~/epg_parsers/shared/.env | xargs) ./bin/tv_pack_parser_2 ~/epg_parsers/shared/output/TV_Pack2.xml
 17 4 * * * cd ~/epg_parsers/current; env $(cat ~/epg_parsers/shared/.env | xargs) ./bin/dvbs_parser ~/epg_parsers/shared/output/dvb_s.csv
 10 11 * * * cd ~/limehd.tv/current; php ./yii cron/yakassa-autopay >> ~/limehd.tv/shared/log/yakassa_autopay.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_30a_music_channel >> /home/master/epg_parsers/shared/log/tvparser_30a_music_channel.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_30atv >> /home/master/epg_parsers/shared/log/tvparser_30atv.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_QS24 >> /home/master/epg_parsers/shared/log/tvparser_QS24.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_TVTEENNETRio >> /home/master/epg_parsers/shared/log/tvparser_TVTEENNETRio.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_aliento_visionHFN >> /home/master/epg_parsers/shared/log/tvparser_aliento_visionHFN.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_answers_that_count >> /home/master/epg_parsers/shared/log/tvparser_answers_that_count.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_central_tv >> /home/master/epg_parsers/shared/log/tvparser_central_tv.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_cjc >> /home/master/epg_parsers/shared/log/tvparser_cjc.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_fishing_offshore >> /home/master/epg_parsers/shared/log/tvparser_fishing_offshore.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_georgia_hollywood_review_tv >> /home/master/epg_parsers/shared/log/tvparser_georgia_hollywood_review_tv.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_investment_pitch_news >> /home/master/epg_parsers/shared/log/tvparser_investment_pitch_news.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_kartoon_circus >> /home/master/epg_parsers/shared/log/tvparser_kartoon_circus.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_law_and_crime >> /home/master/epg_parsers/shared/log/tvparser_law_and_crime.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_lionel_nation >> /home/master/epg_parsers/shared/log/tvparser_lionel_nation.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_loomered_tv >> /home/master/epg_parsers/shared/log/tvparser_loomered_tv.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_nothing_scripted_tv >> /home/master/epg_parsers/shared/log/tvparser_nothing_scripted_tv.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_peruchannel >> /home/master/epg_parsers/shared/log/tvparser_peruchannel.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_rede_evangelizar >> /home/master/epg_parsers/shared/log/tvparser_rede_evangelizar.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_redemetropole >> /home/master/epg_parsers/shared/log/tvparser_redemetropole.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_sidewalks_tv >> /home/master/epg_parsers/shared/log/tvparser_sidewalks_tv.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_spydar_tv >> /home/master/epg_parsers/shared/log/tvparser_spydar_tv.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_the_beach_show >> /home/master/epg_parsers/shared/log/tvparser_the_beach_show.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_the_gird >> /home/master/epg_parsers/shared/log/tvparser_the_gird.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_tv_aracati >> /home/master/epg_parsers/shared/log/tvparser_tv_aracati.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_tv_carioca_net >> /home/master/epg_parsers/shared/log/tvparser_tv_carioca_net.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_tv_pampa >> /home/master/epg_parsers/shared/log/tvparser_tv_pampa.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_tvchannelnetwork >> /home/master/epg_parsers/shared/log/tvparser_tvchannelnetwork.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_tvsurcanal14 >> /home/master/epg_parsers/shared/log/tvparser_tvsurcanal14.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_welt_der_wunder >> /home/master/epg_parsers/shared/log/tvparser_welt_der_wunder.log 2>&1
+*/15 * * * *   cd ~/epg_parsers/current; ./bin/tvparser_yeeaah_tv >> /home/master/epg_parsers/shared/log/tvparser_yeeaah_tv.log 2>&1

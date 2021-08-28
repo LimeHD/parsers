@@ -1,0 +1,1 @@
+docker run -v ~/epg_parsers/shared/output:/out --rm -i tv_parsers:latest georgia_hollywood_review_tv.py --output /out/georgia_hollywood_review_tv.csv
