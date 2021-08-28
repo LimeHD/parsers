@@ -1,0 +1,1 @@
+docker run -v ~/epg_parsers/shared/output:/out --rm -i tv_parsers:latest QS24.py --output /out/QS24.csv

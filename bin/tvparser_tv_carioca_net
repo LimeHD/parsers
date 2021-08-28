@@ -1,0 +1,1 @@
+docker run -v ~/epg_parsers/shared/output:/out --rm -i tv_parsers:latest tv_carioca_net.py --output /out/tv_carioca_net.csv

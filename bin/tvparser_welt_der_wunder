@@ -1,0 +1,1 @@
+docker run -v ~/epg_parsers/shared/output:/out --rm -i tv_parsers:latest welt_der_wunder.py --output /out/welt_der_wunder.csv
